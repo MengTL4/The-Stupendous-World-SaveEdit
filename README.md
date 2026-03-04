@@ -29,5 +29,12 @@ npm run build
 
 ## 说明
 
-- 工具位于独立目录：`save-web-tool/`
 - 工具不会自动改游戏资源文件，只处理你手动加载/导出的文本。
+
+## useData内容解密
+```python
+python useData_tool.py batch-decode useData useData_decoded --overwrite
+```
+- 需要参数useData,代表游戏useData存放路径
+- 需要useData_decoded,代表输出路径
+- 其余参数可以默认
