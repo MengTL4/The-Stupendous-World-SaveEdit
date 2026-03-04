@@ -38,3 +38,11 @@ python useData_tool.py batch-decode useData useData_decoded --overwrite
 - 需要参数useData,代表游戏useData存放路径
 - 需要useData_decoded,代表输出路径
 - 其余参数可以默认
+
+## data.pak内容解密
+```python
+python tools/data_pak_tool.py batch-decode data.pak data_decoded_pycrypto --overwrite
+```
+- 需要参数data.pak,代表游戏data.pak文件位置
+- 需要data_decoded_pycrypto,代表输出路径
+- 其余参数可以默认
