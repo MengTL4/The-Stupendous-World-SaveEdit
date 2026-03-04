@@ -1,0 +1,156 @@
+:root {
+  color-scheme: light;
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  color: #1f2d3d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #f4f7fb;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #0f2744;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #4b5f77;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.toolbar button {
+  border: 1px solid #c4d2e2;
+  background: #fdfefe;
+  color: #123458;
+  border-radius: 8px;
+  padding: 7px 11px;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background: #eaf3ff;
+}
+
+.toggle {
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2e4b67;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.status {
+  border: 1px solid #d3deea;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.error {
+  color: #b52121;
+}
+
+.io-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.panel {
+  border: 1px solid #d3deea;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.panel h2,
+.editor-panel h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #17375a;
+}
+
+.panel textarea {
+  width: 100%;
+  min-height: 220px;
+  resize: vertical;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  border: 1px solid #c9d8e8;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2d3d;
+  padding: 8px;
+}
+
+.editor-panel {
+  border: 1px solid #d3deea;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.jsoneditor-host {
+  height: 68vh;
+  min-height: 540px;
+  border: 1px solid #c9d8e8;
+}
+
+.jsoneditor {
+  border: none;
+}
+
+code {
+  background: #f4f9ff;
+  border: 1px solid #d7e5f4;
+  border-radius: 6px;
+  padding: 1px 5px;
+}
+
+@media (max-width: 1100px) {
+  .io-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jsoneditor-host {
+    min-height: 460px;
+  }
+}
