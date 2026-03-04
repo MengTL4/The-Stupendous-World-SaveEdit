@@ -41,7 +41,7 @@ python useData_tool.py batch-decode useData useData_decoded --overwrite
 
 ## data.pak内容解密
 ```python
-python tools/data_pak_tool.py batch-decode data.pak data_decoded_pycrypto --overwrite
+python data_pak_tool.py batch-decode data.pak data_decoded_pycrypto --overwrite
 ```
 - 需要参数data.pak,代表游戏data.pak文件位置
 - 需要data_decoded_pycrypto,代表输出路径
